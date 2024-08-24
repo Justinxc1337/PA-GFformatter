@@ -1,32 +1,59 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Made by Justin Chardonnay from SSIT</title>
+    <title>Made by Justin Chardonnay from SeeSafeIT ApS</title>
 </head>
 <body>
+    <img src="KBCBnoBG.png" alt="KBCB-logo">
     <h1>Udbetaling af honorar / B-Indkomst <br> Request for remuneration</h1>
-    <div>Anmodningsdato: {submissiondt}</div>
-    <div>Date of request: {submissiondt}</div> <br>
-    <hr>
-
     <ul class="list">
-        <li><b>Date of the event:</b> {dote}</li><br/>
-        <li><b>Artist name:</b>  {artistname}</li><br/>
-        <li><b>Artist Email:</b> {artistemail}</li><br/>
+        <li><div><b>Anmodningsdato:</b></div>     <div>{submissiondt}</div></li>
+        <li><div><b>Date of request:</b></div>    <div>{submissiondt}</div></li>
+    </ul>
+    <hr>
+    <ul class="list">
+        <li><div><b>Date of the event:</b></div>  <div>{dote}</div></li>
+        <li><div><b>Artist name:</b></div>        <div>{artistname}</div></li>
+        <li><div><b>Artist Email:</b></div>       <div>{artistemail}</div></li>
+        <li><div><b>Artist Cake:</b></div>        <div>{artistemail}</div></li>
+        <li><div><b>Artist Toy:</b></div>         <div>{artistemail}</div></li>
     </ul>
 </body>
 </html>
 
 <style type="text/css">
-    *{
+    * {
         font-size: 14px;
-    font-family: arial;
+        font-family: Arial, sans-serif;
     }
-ul.list{
-    list-style-type: none;
-}
-ul.list li{
-    border: 0px solid;
-    padding: 5px 5px;
-}	
+    ul.list {
+        list-style-type: none;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    ul.list li {
+        display: contents;
+    }
+    ul.list li div {
+        padding: 5px;
+    }
+    ul.list li div:first-child {
+        padding-right: 10px;
+    }
+    ul.list li div:last-child {
+        text-align: left;
+        padding-left: 10px;
+    }
+    h1 {
+        font-size: 20px; 
+        padding-left: 45px;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        padding-right: 40px;
+    }
 </style>

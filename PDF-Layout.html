@@ -14,11 +14,25 @@
     <ul class="list">
         <li><div><b>Date of the event:</b></div>  <div>{dote}</div></li>
         <li><div><b>Artist name:</b></div>        <div>{artistname}</div></li>
-        <li><div><b>Artist Email:</b></div>       <div>{artistemail}</div></li>
-        <li><div><b>Artist Cake:</b></div>        <div>{artistemail}</div></li>
-        <li><div><b>:</b></div>         <div>{}</div></li>
-        <li><div><b>:</b></div>         <div>{}</div></li>
+        <li><div><b>Venue:</b></div>       <div>{venue}</div></li>
+        <li><div><b>Full name:</b></div>        <div>{fn}</div></li>
+        <li><div><b>Address:</b></div>         <div>{adr}</div></li>
+        <li><div><b>City:</b></div>         <div>{city}</div></li>
+        <li><div><b>Zip code:</b></div>         <div>{zc}</div></li>
+        <li><div><b>Country:</b></div>         <div>{country}</div></li>
+        <li ><div class="pantheon"><b>CPR Number:</b></div><div class="pantheon">{cpr}</div></li>
         <li><div><b>Betalingsinformationer</b></div><div><b>Payment details:</b></div></li>
+        <li><div><b>Regnr:</b></div>         <div>{regnr}</div></li>
+        <li><div><b>Kontonr:</b></div>         <div>{kontonr}</div></li>
+        <li><div><b>SWIFT:</b></div>         <div>{swift}</div></li>
+        <li><div><b>IBAN:</b></div>         <div>{iban}</div></li>
+        <li><div><b>BIC:</b></div>         <div>{bic}</div></li>
+        <li><div><b>Date of Birth:</b></div>         <div>{dob}</div></li>
+        <li><div><b>Amount:</b></div>         <div>{money}</div></li>
+        <li><div><b>Reference Number:</b></div>         <div>@{variables('ReferenceNumber')}</div></li>
+
+
+        
     </ul>
 </body>
 </html>
@@ -61,5 +75,8 @@
     hr {
         border-top: 1px solid #000;
         width: 90%;
+    }
+    .pantheon {
+        margin-bottom: 30px;
     }
 </style>

@@ -2,16 +2,36 @@
 <html>
 <head>
     <title>Made by Justin Chardonnay from SeeSafeIT ApS</title>
+    <style type="text/css">
+		*{
+			font-size: 14px;
+		font-family: arial;
+		}
+	ul.list{
+		list-style-type: none;
+	}
+	ul.list li{
+		border: 0px solid;
+		padding: 5px 5px;
+	}
+    h1 {
+        font-size: 30px;
+        font-family: arial;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: arial;
+    }
+	</style>
 </head>
 <body>
-    <!-- <img src="KBCBnoBG.png" alt="KBCB-logo"> -->
     <h1>Udbetaling af honorar / B-Indkomst <br> Request for remuneration</h1>
+    <h2>KulturBox</h2>
     <ul class="list">
         <li><b>Anmodningsdato:</b> {submissiondt}</li>
         <li><b>Date of request:</b> {submissiondt}</li>
-    </ul>
-    <hr>
-    <ul class="list">
+        <hr> <br>
+
         <li><b>Date of the event:</b> {dote}</li>
         <li><b>Artist name:</b> {artistname}</li>
         <li><b>Venue:</b> {venue}</li>
@@ -21,7 +41,7 @@
         <li><b>Zip code:</b> {zc}</li>
         <li><b>Country:</b> {country}</li>
         <li><b>CPR Number:</b> {cpr}</li>
-        <br><li><br><b>Betalingsinformationer</b><b>Payment details:</b></li>
+        <br><li><br><b>Betalingsinformationer / </b><b>Payment details:</b></li>
         <li><b>Regnr:</b> {regnr}</li>
         <li><b>Kontonr:</b> {kontonr}</li>
         <li><b>SWIFT:</b> {swift}</li>
@@ -33,37 +53,3 @@
     </ul>
 </body>
 </html>
-
-<style type="text/css">
-    * {
-        font-size: 14px;
-        font-family: Arial, sans-serif;
-    }
-    ul.list {
-        list-style-type: none;
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-    ul.list li {
-        display: contents;
-    }
-    h1 {
-        font-size: 20px; 
-        padding-left: 45px;
-    }
-    img {
-        width: 100px;
-        height: 100px;
-        display: block;
-        margin-left: auto;
-        padding-right: 40px;
-    }
-    hr {
-        border-top: 1px solid #000;
-        width: 90%;
-    }
-    .pantheon {
-        margin-bottom: 30px;
-    }
-</style>

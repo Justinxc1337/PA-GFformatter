@@ -41,3 +41,6 @@
 </ul>
 </body>
 </html>
+
+
+replace('You have successfully submitted a fee request to Kulturforening CB.<br>Your submission has been given a unique reference number: XX.<br><br>Please refer to this reference ID, if you have any questions.<br><br>This is an auto-generated email. Please do not reply to this message<br><br>Best regards<br>Culture Box & Kulturforening CB', 'XX', string(add(int(triggerOutputs()?['body/resourceData/responseId']), 2000)))

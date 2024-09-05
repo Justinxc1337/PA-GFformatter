@@ -3,6 +3,10 @@
 <head>
     <title>Made by Justin Chardonnay from SeeSafeIT ApS</title>
     <style type="text/css">
+        @page {
+            size: A4;
+            margin: 0px;
+        }
         * {
             font-size: 14px;
             font-family: arial;
@@ -19,7 +23,10 @@
             width: 0%;
         }
         td, th {
-            padding: 8px;
+            padding-top: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 4px;
             vertical-align: top;
             text-align: left;
         }
@@ -39,12 +46,21 @@
         h2 {
             font-size: 18px;
             margin: 0;
-            margin-top: 10px;
+            padding-bottom: 15px;
         }
         .top-right {
             width: 100px;
-            display: block;
-            margin-left: auto;
+            right: 1px;
+        }
+        .bp {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+        .bp2 {
+            padding-top: 0;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -57,10 +73,6 @@
             <col>
             <col>
         </colgroup>
-        <tr>
-            <td>Anmodningsdato:</td>
-            <td class="data">{submissiondt}</td>
-        </tr>
         <tr>
             <td>Date of request:</td>
             <td class="data">{submissiondt}</td>
@@ -110,10 +122,16 @@
         </tr>
         <tr>
             <td>CPR Number:</td>
-            <td class="data">{cpr}</td>
+            <td class="data down">{cpr}</td>
         </tr>
         <tr>
-            <td colspan="2"><br>Betalingsinformationer / Payment details:</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bp">Betalingsinformationer / Payment details:</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bp2">(For Danish Accounts)</td>
         </tr>
         <tr>
             <td>Regnr:</td>
@@ -121,7 +139,13 @@
         </tr>
         <tr>
             <td>Kontonr:</td>
-            <td class="data">{kontonr}</td>
+            <td class="data down">{kontonr}</td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="bp2"><br>(For International Accounts)</td>
         </tr>
         <tr>
             <td>SWIFT:</td>
